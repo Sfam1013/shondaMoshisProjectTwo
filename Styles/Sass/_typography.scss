@@ -1,0 +1,64 @@
+$fontcolour: #f3faff;
+$roboto:'Roboto', sans-serif;
+$walter:'Walter Turncoat', cursive;
+h1{
+    color: $fontcolour;
+    font-family: $walter;
+    font-weight: 400;
+    font-size: 145.2px;
+}
+h2{
+    color: $fontcolour;
+    font-family: $walter;
+    font-weight:400;
+    font-size: 121.5px;
+    line-height: 125.6px;
+}
+h3{
+    color: $fontcolour;
+    font-family: $walter;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 99.8px;
+}
+h4{
+    color:$fontcolour;
+    font-family: $walter;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    letter-spacing: 1.3px;
+}
+h5{
+    color:$fontcolour;
+    font-family: $walter;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 1.3px;
+}
+h6{
+    color: $fontcolour;
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+button{
+    color: #474bb5;
+    font-family: $walter;
+    font-weight: 400;
+    font-size: 25.4px;
+    line-height: 41.6px;
+    text-align: center;
+}
+
+p{
+    color: $fontcolour;
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}

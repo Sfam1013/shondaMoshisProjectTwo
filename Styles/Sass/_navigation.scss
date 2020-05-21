@@ -1,0 +1,59 @@
+
+.mobile a{
+    color: #08fded;
+}
+
+
+.mobile label, #hamburger { display: none; }
+
+
+.links { display: flex; }
+.links a{
+    color: $fontcolour;
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.links a:hover {
+  background: #044779;
+}
+
+
+@media(max-width: 768px){
+
+  .mobile label { 
+    display: inline-block; 
+    color: $fontcolour;
+    background: #044779;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  .mobile {
+  width: 100%;
+  background: #474bb5;
+}
+.links a {
+
+  padding: 10px;
+  color: #08fded;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+  .links a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+
+  .links { display: none; }
+  .mobile input:checked ~ .links { display: block; }
+}
