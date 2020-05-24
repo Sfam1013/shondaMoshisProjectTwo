@@ -10,7 +10,8 @@
     <title>Blog</title>
 </head>
 <body>
-    <header>
+    <header class="blog">
+        <nav class="headerContents wrapper">
     <nav class="mobile">
         <label for="hamburger">&#9776;</label>
         <input type="checkbox" id="hamburger" />
@@ -18,15 +19,18 @@
         <div class="links">
             <a href="index.html">Home</a>
             <a href="index.html">About</a>
-            <a href="blog.html">Blog</a>
+            <a class="active" href="blog.html">Blog</a>
             <a href="contactUs.html">Contact Us</a>
         </div>
     </nav>
         <h2>Blog</h2>
+        </nav>
     </header>
-    <section class="blogPart1">
-        <div>
-            <img src="./FunPlace-final-assets/FunPlace-final-assets/blog-side-image.jpg" alt="box of sidewalk chalk">
+    <section class="blogPartOne">
+        <div class="wrapper blogPartOneContent">
+        <div class="blogOneLeft">
+            <img class="blogPic" src="./FunPlace-final-assets/blog-side-image.jpg" alt="box of sidewalk chalk">
+            <div class="blogLeftText">
             <h5>Our Mission</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, consectetur animi odio placeat dolores fuga!</p>
             <h5>Recent Posts</h5>
@@ -36,9 +40,11 @@
                 <li>Lorem ipsum dolor sit.</li>
                 <li>Lorem ipsum dolor sit.</li>
             </ul>
+            </div>
         </div>
-        <div>
-            <img src="./FunPlace-final-assets/FunPlace-final-assets/blog-post-imag.jpg" alt="child popping really big bubbles">
+        <div class="blogOneRight">
+            <img class="blogPic" src="./FunPlace-final-assets/blog-post-imag.jpg" alt="child popping really big bubbles">
+            <div class="blogRightText">
             <h3>New Activities</h3>
             <p>Monday January 30, 2019 by Saron</p>
             <ul>
@@ -48,28 +54,40 @@
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quae sint reprehenderit, odit dolor ea adipisci facilis sequi natus unde? Iusto, facere eum.</li>
             </ul>
         </div>
+        </div>
+        </div>
     </section>
-    <section class="blogPart2">
+    <section class="blogPartTwo clearfix">
+        <div class="blogTwoContents wrapper">
         <h3>Comments:</h3>
-        <div>
-            <img src="./FunPlace-final-assets/FunPlace-final-assets/comment-1.jpg" alt="headshot of girl with glasses">
+        <div class="comment">
+            <div class="commentPic">
+            <img src="./FunPlace-final-assets/comment-1.jpg" alt="headshot of girl with glasses">
+            </div>
+            <div class="commentText">
             <h6>Tuesday October 9th, 2019 by Mariama</h6>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolorem facere consectetur vero consequatur voluptate minus inventore repudiandae qui, aliquam voluptates deserunt a in quam assumenda? Repudiandae id ipsam soluta tempora nulla.</p>
+            </div>
         </div>
-        <div>
-            <img src="./FunPlace-final-assets/FunPlace-final-assets/comment-2.jpg" alt="headshot of boy with brown hair">
+        <div class="comment lastComment">
+            <div class="commentPic">
+            <img src="./FunPlace-final-assets/comment-2.jpg" alt="headshot of boy with brown hair">
+            </div>
+            <div class="commentText">
             <h6>Wednesday October 10th, 2019 by Rob</h6>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam officia quis at quibusdam expedita vitae alias minima fugit.</p>
+            </div>
         </div>
         <form action="">
-            <label for="name">Name</label>
+            <label class="sr-only" for="name">Name</label>
             <input type="text" name="" id="name" placeholder="Name">
-            <label for="email">email</label>
+            <label class="sr-only" for="email">email</label>
             <input type="email" name="" id="email" placeholder="Email address">
-            <label for="message"></label>
-            <textarea name="" id="message" cols="30" rows="10"></textarea>
+            <label class="sr-only" for="comment"></label>
+            <textarea name="" id="comment" cols="30" rows="8" placeholder="Comment"></textarea>
             <button type="submit">Post Comment</button>
         </form>
+        </div>
     </section>
     <footer>
         <p>Copyright <i class="far fa-copyright"></i> 2019 HackerYou</p>

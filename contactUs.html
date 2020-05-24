@@ -10,7 +10,8 @@
     <title>Contact Us</title>
 </head>
 <body>
-    <header>
+    <header class="contactHeader">
+        <div class="wrapper">
     <nav class="mobile">
         <label for="hamburger">&#9776;</label>
         <input type="checkbox" id="hamburger" />
@@ -19,13 +20,15 @@
             <a href="index.html">Home</a>
             <a href="index.html">About</a>
             <a href="blog.html">Blog</a>
-            <a href="contactUs.html">Contact Us</a>
+            <a class="active" href="contactUs.html">Contact Us</a>
         </div>
     </nav>
         <h2>Get in Touch</h2>
+        </div>
     </header>
-    <section class="contactPart1">
-        <div>
+    <section class="contactPartOne">
+        <div class="wrapper contactOneContents">
+        <div class="blogIcons">
             <ul>
                 <li><i class="fab fa-facebook-f"></i></li>
                 <li><i class="fab fa-instagram"></i></li>
@@ -33,17 +36,18 @@
                 <li><i class="fab fa-whatsapp"></i></li>
             </ul>
             <p>info@email.com</p>
-            <p>123-456-7890 123 Queen St West, Unit 10 Toronto, Ontario M5V2D5</p>
+            <p>123-456-7890 123 <br> Queen St West, Unit 10 <br>Toronto, Ontario <br> M5V2D5</p>
         </div>  
-        <form action="">
-            <label for="name">Name</label>
+        <form class="contactForm" action="">
+            <label class="sr-only" for="name">Name</label>
             <input type="text" name="" id="name" placeholder="Name">
-            <label for="email">email</label>
+            <label class="sr-only" for="email">email</label>
             <input type="email" name="" id="email" placeholder="Email address">
-            <label for="message"></label>
-            <textarea name="" id="message" cols="30" rows="10"></textarea>
+            <label class="sr-only" for="message"></label>
+            <textarea name="" id="comment" cols="30" rows="10" placeholder="Message"></textarea>
             <button type="submit">Submit</button>
-        </form>   
+        </form>  
+        </div>
     </section>
     <footer>
             <p>Copyright <i class="far fa-copyright"></i> 2019 HackerYou</p>
