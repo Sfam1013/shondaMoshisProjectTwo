@@ -8,14 +8,18 @@
     text-align: center;
     padding-top: 5px;
 }
-.blogIcons{
+.contactIcons{
     color: white;
     width:50%;
     margin-top: 140px;
 }
-.blogIcons ul{
+.contactIcons ul{
     list-style: none;
     display:flex;
     justify-content: space-evenly;
     width:60%;
+}
+.contactIcons li:hover{
+    cursor: pointer;
+    color: #474bb5;
 }

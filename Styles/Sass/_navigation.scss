@@ -34,25 +34,23 @@
     padding: 10px;
   }
   .mobile {
-  width: 100%;
-  background: #474bb5;
-}
+    width: 100%;
+  }
 .links a {
-
-  padding: 10px;
-  color: #08fded;
-  text-decoration: none;
-  text-align: center;
-}
-
-
-  .links a {
+    padding: 10px;
+    color: #08fded;
+    text-decoration: none;
+    text-align: center;
+  }
+ .links a {
     box-sizing: border-box;
     display: block;
     width: 100%;
     border-top: 1px solid #333;
   }
-
+  .links{
+    width:100%;
+  }
 
   .links { display: none; }
   .mobile input:checked ~ .links { display: block; }
