@@ -824,6 +824,9 @@ header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .contactIcons ul {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1185px) {
@@ -883,6 +886,9 @@ header {
   .blogTwoContents {
     clear: both;
     width: 90%;
+  }
+  .contactIcons {
+    margin-right: 5%;
   }
 }
 
